@@ -1,6 +1,8 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from auth.router import router as auth_router
+from tickets.router import router as tickets_router
 from reports.router import router as reports_router
 
 app = FastAPI(
@@ -9,7 +11,15 @@ app = FastAPI(
     description="RESTful API for cinema ticket management",
 )
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 app.include_router(auth_router)
+app.include_router(tickets_router)
 app.include_router(reports_router)
 
 
