@@ -152,6 +152,6 @@ The admin role is assigned manually in the database or prepared before start doc
 | Link | Description |
 |------|-------------|
 | ![Docker](https://img.shields.io/badge/Docker-containerized-2496ED?logo=docker) | **[Docker](https://www.docker.com/)** — application containerization (multi-stage build) |
-| ![Docker Compose](https://img.shields.io/badge/Docker--Compose-orchestration-1488C6?logo=docker) | **[Docker Compose](https://docs.docker.com/compose/)** — service orchestration (application, database, mail) |
+| ![Docker Compose](https://img.shields.io/badge/Docker--Compose-orchestration-1488C6?logo=docker) | **[Docker Compose](https://docs.docker.com/compose/)** — service orchestration (application, database) |
 
 
